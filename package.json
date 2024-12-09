@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build && next export",
+    "build": "next build",
     "start": "next start",
     "prepare": "husky install",
     "prettier": "prettier --check .",
@@ -15,11 +15,14 @@
     "type:check": "tsc --noEmit",
     "type:watch": "tsc --noEmit --watch",
     "docker:build": "docker build -t spotify-clone .",
-    "docker:run": "docker run -p 80:80 spotify-clone"
+    "docker:run": "docker run --name spotify-clone -p 3000:3000 spotify-clone",
+    "docker:run:detach": "docker run --name spotify-clone -d -p 3000:3000 spotify-clone",
+    "docker:stop": "docker stop $(docker ps -a -q)",
+    "docker:clean": "docker system prune -a"
   },
   "dependencies": {
     "i18next": "^24.0.5",
-    "next": "15.0.3",
+    "next": "^15.0.4",
     "next-i18next": "^15.4.0",
     "next-pwa": "^5.6.0",
     "react": "19.0.0-rc-66855b96-20241106",

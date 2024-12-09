@@ -1,33 +1,72 @@
-# Build stage
-FROM node:18-alpine AS builder
+# Base stage: Lightweight image based on Alpine
+FROM node:18-alpine AS base
 
+# Install libc6-compat for native dependency compatibility
+RUN apk add --no-cache libc6-compat && rm -rf /var/cache/apk/*
+
+# Set default working directory
 WORKDIR /app
 
-# Install dependencies
-COPY package*.json ./
-RUN npm ci
+# Stage 1: Install dependencies
+FROM base AS deps
 
-# Copy project files
+# Copy dependency management files
+COPY package.json yarn.lock* package-lock.json* pnpm-lock.yaml* .npmrc* ./
+
+# Install dependencies based on detected package manager
+RUN \
+  if [ -f yarn.lock ]; then yarn install --frozen-lockfile; \
+  elif [ -f package-lock.json ]; then npm ci --legacy-peer-deps; \
+  elif [ -f pnpm-lock.yaml ]; then corepack enable pnpm && pnpm install --frozen-lockfile; \
+  else echo "No lock file found. Exiting." && exit 1; \
+  fi
+
+# Stage 2: Build the project
+FROM base AS builder
+
+# Copy installed dependencies
+COPY --from=deps /app/node_modules ./node_modules
+
+# Copy remaining files for build
 COPY . .
 
-# Build Next.js application
-RUN npm run build
+# Disable Next.js telemetry (optional)
+ENV NEXT_TELEMETRY_DISABLED=1
 
-# Production stage with Nginx
-FROM nginx:alpine
+# Build the application in standalone mode
+RUN \
+  if [ -f yarn.lock ]; then yarn build; \
+  elif [ -f package-lock.json ]; then npm run build; \
+  elif [ -f pnpm-lock.yaml ]; then corepack enable pnpm && pnpm run build; \
+  else echo "No lock file found. Exiting." && exit 1; \
+  fi
 
-# Copy custom Nginx configuration
-COPY /nginx/nginx.conf /etc/nginx/conf.d/default.conf
+# Stage 3: Prepare production image
+FROM base AS runner
 
-# Copy Next.js static files
-COPY --from=builder /app/.next/static /usr/share/nginx/html/_next/static
-COPY --from=builder /app/public /usr/share/nginx/html/public
+# Set working directory
+WORKDIR /app
 
-# Copy standalone build
-COPY --from=builder /app/.next/standalone /usr/share/nginx/html
+# Production environment
+ENV NODE_ENV=production
+ENV NEXT_TELEMETRY_DISABLED=1
+ENV PORT=3000
+ENV HOSTNAME=0.0.0.0
 
-# Expose port 80
-EXPOSE 80
+# Create non-root user for security
+RUN addgroup --system --gid 1001 nodejs \
+  && adduser --system --uid 1001 nextjs
 
-# Start Nginx
-CMD ["nginx", "-g", "daemon off;"]
+# Copy necessary files for execution
+COPY --from=builder /app/public ./public
+COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
+COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
+
+# Set non-root user
+USER nextjs
+
+# Expose listening port
+EXPOSE 3000
+
+# Startup command
+CMD ["node", "server.js"]

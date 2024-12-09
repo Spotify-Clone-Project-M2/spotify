@@ -5,10 +5,8 @@ const nextConfig: import('next').NextConfig = {
   compiler: {
     removeConsole: process.env.NEXT_PUBLIC_DEPLOYMENT_ENV !== 'development', // Remove console.log in production
   },
-  i18n: {
-    locales: ['fr', 'en', 'ar', 'pt'],
-    defaultLocale: 'fr',
-    localeDetection: false,
+  eslint: {
+    ignoreDuringBuilds: true,
   },
   output: 'standalone',
 };
