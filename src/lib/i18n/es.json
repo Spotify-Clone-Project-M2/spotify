@@ -1,0 +1,30 @@
+{
+  "common": {
+    "welcome": "Bienvenido",
+    "search": "Buscar",
+    "library": "Biblioteca",
+    "home": "Inicio",
+    "settings": "Configuración",
+    "language": "Idioma",
+    "darkMode": "Modo oscuro",
+    "lightMode": "Modo claro"
+  },
+  "auth": {
+    "login": "Iniciar sesión",
+    "signup": "Registrarse",
+    "logout": "Cerrar sesión"
+  },
+  "player": {
+    "play": "Reproducir",
+    "pause": "Pausar",
+    "next": "Siguiente",
+    "previous": "Anterior",
+    "shuffle": "Aleatorio",
+    "repeat": "Repetir"
+  },
+  "playlist": {
+    "create": "Crear lista de reproducción",
+    "addToPlaylist": "Añadir a la lista",
+    "removeFromPlaylist": "Quitar de la lista"
+  }
+}

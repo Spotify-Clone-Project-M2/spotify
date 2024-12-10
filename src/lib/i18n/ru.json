@@ -1,0 +1,30 @@
+{
+  "common": {
+    "welcome": "Добро пожаловать",
+    "search": "Поиск",
+    "library": "Библиотека",
+    "home": "Главная",
+    "settings": "Настройки",
+    "language": "Язык",
+    "darkMode": "Темный режим",
+    "lightMode": "Светлый режим"
+  },
+  "auth": {
+    "login": "Войти",
+    "signup": "Регистрация",
+    "logout": "Выйти"
+  },
+  "player": {
+    "play": "Воспроизвести",
+    "pause": "Пауза",
+    "next": "Следующий",
+    "previous": "Предыдущий",
+    "shuffle": "Перемешать",
+    "repeat": "Повторить"
+  },
+  "playlist": {
+    "create": "Создать плейлист",
+    "addToPlaylist": "Добавить в плейлист",
+    "removeFromPlaylist": "Удалить из плейлиста"
+  }
+}

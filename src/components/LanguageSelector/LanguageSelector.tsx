@@ -4,14 +4,19 @@ import useTranslation from '@/hooks/useTranslation';
 
 function LanguageSelector() {
   const { locale, changeLanguage, t } = useTranslation();
-  const locales = ['fr', 'en', 'ar', 'pt'];
+  const locales = ['fr', 'en', 'ar', 'pt', 'ru', 'pl', 'ja', 'uk', 'es'];
 
   const getLanguageName = (loc: string): string => {
     const names: Record<string, string> = {
       fr: 'Français',
       en: 'English',
-      ar: 'العربية',
+      es: 'Español',
       pt: 'Português',
+      ar: 'العربية',
+      ru: 'Русский',
+      pl: 'Polski',
+      ja: '日本語',
+      uk: 'Українська',
     };
     return names[loc] || loc;
   };

@@ -5,7 +5,9 @@
     "library": "Library",
     "home": "Home",
     "settings": "Settings",
-    "language": "Language"
+    "language": "Language",
+    "darkMode": "Dark mode",
+    "lightMode": "Light mode"
   },
   "auth": {
     "login": "Login",

@@ -5,7 +5,9 @@
     "library": "Biblioteca",
     "home": "Início",
     "settings": "Configurações",
-    "language": "Idioma"
+    "language": "Idioma",
+    "darkMode": "Modo escuro",
+    "lightMode": "Modo claro"
   },
   "auth": {
     "login": "Entrar",

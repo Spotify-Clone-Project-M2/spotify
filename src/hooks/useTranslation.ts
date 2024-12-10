@@ -6,7 +6,12 @@ const translationsLoaders = {
   en: () => import('@/lib/i18n/en.json').then(mod => mod.default),
   fr: () => import('@/lib/i18n/fr.json').then(mod => mod.default),
   ar: () => import('@/lib/i18n/ar.json').then(mod => mod.default),
+  es: () => import('@/lib/i18n/es.json').then(mod => mod.default),
   pt: () => import('@/lib/i18n/pt.json').then(mod => mod.default),
+  ru: () => import('@/lib/i18n/ru.json').then(mod => mod.default),
+  pl: () => import('@/lib/i18n/pl.json').then(mod => mod.default),
+  ja: () => import('@/lib/i18n/ja.json').then(mod => mod.default),
+  uk: () => import('@/lib/i18n/uk.json').then(mod => mod.default),
 };
 
 type Translations = Record<string, any>;

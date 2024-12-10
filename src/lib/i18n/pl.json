@@ -1,0 +1,30 @@
+{
+  "common": {
+    "welcome": "Witaj",
+    "search": "Szukaj",
+    "library": "Biblioteka",
+    "home": "Strona główna",
+    "settings": "Ustawienia",
+    "language": "Język",
+    "darkMode": "Tryb ciemny",
+    "lightMode": "Tryb jasny"
+  },
+  "auth": {
+    "login": "Zaloguj się",
+    "signup": "Zarejestruj się",
+    "logout": "Wyloguj się"
+  },
+  "player": {
+    "play": "Odtwórz",
+    "pause": "Pauza",
+    "next": "Następny",
+    "previous": "Poprzedni",
+    "shuffle": "Losowo",
+    "repeat": "Powtórz"
+  },
+  "playlist": {
+    "create": "Utwórz playlistę",
+    "addToPlaylist": "Dodaj do playlisty",
+    "removeFromPlaylist": "Usuń z playlisty"
+  }
+}

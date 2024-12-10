@@ -5,7 +5,9 @@
     "library": "المكتبة",
     "home": "الرئيسية",
     "settings": "الإعدادات",
-    "language": "اللغة"
+    "language": "اللغة",
+    "darkMode": "الوضع الداكن",
+    "lightMode": "الوضع الفاتح"
   },
   "auth": {
     "login": "تسجيل الدخول",

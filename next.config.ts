@@ -14,6 +14,9 @@ const nextConfig: import('next').NextConfig = {
       hmrRefreshes: true,
     },
   },
+  sassOptions: {
+    includePaths: ['./src/styles'],
+  },
 };
 
 // Configuration object tells the next-pwa plugin
