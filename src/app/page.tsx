@@ -1,6 +1,5 @@
 'use client';
 
-import '@/styles/globals.scss';
 import useTranslation from '@/hooks/useTranslation';
 
 export default function Home() {
