@@ -9,7 +9,9 @@ export default function useTranslation(defaultLocale = 'fr') {
     }
     return defaultLocale;
   });
-  const [translations, setTranslations] = useState({});
+  const [translations, setTranslations] = useState<Translations>(
+    {} as Translations
+  );
 
   useEffect(() => {
     const loadTranslations = async () => {
@@ -36,12 +38,10 @@ export default function useTranslation(defaultLocale = 'fr') {
     [locale]
   );
 
-  type TranslationValue = string | Record<string, unknown>;
-
   const t = useCallback(
     (key: string): string => {
       const keys = key.split('.');
-      const value = keys.reduce((acc: TranslationValue, k: string) => {
+      const value = keys.reduce((acc: unknown, k: string) => {
         if (acc && typeof acc === 'object') {
           return (acc as Record<string, unknown>)[k];
         }
