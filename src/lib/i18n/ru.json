@@ -6,8 +6,9 @@
     "home": "Главная",
     "settings": "Настройки",
     "language": "Язык",
-    "darkMode": "Темный режим",
-    "lightMode": "Светлый режим"
+    "darkMode": "Тёмная тема",
+    "lightMode": "Светлая тема",
+    "popularArtists": "Популярные исполнители"
   },
   "auth": {
     "login": "Войти",
@@ -20,11 +21,35 @@
     "next": "Следующий",
     "previous": "Предыдущий",
     "shuffle": "Перемешать",
-    "repeat": "Повторить"
+    "repeat": "Повторить",
+    "volume": "Громкость"
   },
   "playlist": {
     "create": "Создать плейлист",
     "addToPlaylist": "Добавить в плейлист",
     "removeFromPlaylist": "Удалить из плейлиста"
+  },
+  "sidebar": {
+    "library": "Библиотека",
+    "addPlaylist": "Добавить плейлист",
+    "createPlaylist": {
+      "title": "Создайте свой первый плейлист",
+      "description": "Это просто, мы поможем вам",
+      "button": "Создать плейлист"
+    },
+    "podcasts": {
+      "title": "Найдём подкасты для подписки",
+      "description": "Мы будем сообщать вам о новых эпизодах",
+      "button": "Просмотреть подкасты"
+    }
+  },
+  "footer": {
+    "legal": "Правовая информация",
+    "privacyCenter": "Центр конфиденциальности",
+    "privacy": "Политика конфиденциальности",
+    "cookiesSettings": "Настройки файлов cookie",
+    "about": "О рекламе",
+    "accessibility": "Доступность",
+    "cookies": "Файлы cookie"
   }
 }

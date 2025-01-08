@@ -1,0 +1,61 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .title {
+      font-size: 2.4rem;
+      font-weight: 700;
+      color: var(--color-text-base);
+    }
+  }
+
+  .sectionTitle {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-text-base);
+    margin-bottom: 1.6rem;
+  }
+
+  .artistsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 2.4rem;
+    margin-bottom: 4rem;
+
+    .artistCard {
+      position: relative;
+      padding: 1.6rem;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.1);
+      transition: background 0.3s ease;
+
+      &:hover {
+        background: rgba(255, 255, 255, 0.2);
+      }
+      .artistImage {
+        width: 100%;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        margin-bottom: 1.6rem;
+        object-fit: cover;
+      }
+
+      .artistName {
+        font-size: 1.6rem;
+        font-weight: 600;
+        color: var(--color-text-base);
+      }
+
+      .artistType {
+        font-size: 1.4rem;
+        color: var(--color-text-subdued);
+      }
+    }
+  }
+}

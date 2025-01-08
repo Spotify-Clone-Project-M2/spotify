@@ -4,10 +4,11 @@
     "search": "Buscar",
     "library": "Biblioteca",
     "home": "Inicio",
-    "settings": "Configuración",
+    "settings": "Ajustes",
     "language": "Idioma",
     "darkMode": "Modo oscuro",
-    "lightMode": "Modo claro"
+    "lightMode": "Modo claro",
+    "popularArtists": "Artistas populares"
   },
   "auth": {
     "login": "Iniciar sesión",
@@ -20,11 +21,35 @@
     "next": "Siguiente",
     "previous": "Anterior",
     "shuffle": "Aleatorio",
-    "repeat": "Repetir"
+    "repeat": "Repetir",
+    "volume": "Volumen"
   },
   "playlist": {
-    "create": "Crear lista de reproducción",
+    "create": "Crear lista",
     "addToPlaylist": "Añadir a la lista",
-    "removeFromPlaylist": "Quitar de la lista"
+    "removeFromPlaylist": "Eliminar de la lista"
+  },
+  "sidebar": {
+    "library": "Biblioteca",
+    "addPlaylist": "Añadir lista",
+    "createPlaylist": {
+      "title": "Crea tu primera lista",
+      "description": "Es fácil, te ayudaremos",
+      "button": "Crear lista"
+    },
+    "podcasts": {
+      "title": "Busquemos podcasts para seguir",
+      "description": "Te mantendremos informado sobre nuevos episodios",
+      "button": "Explorar podcasts"
+    }
+  },
+  "footer": {
+    "legal": "Legal",
+    "privacyCenter": "Centro de privacidad",
+    "privacy": "Política de privacidad",
+    "cookiesSettings": "Configuración de cookies",
+    "about": "Sobre anuncios",
+    "accessibility": "Accesibilidad",
+    "cookies": "Cookies"
   }
 }

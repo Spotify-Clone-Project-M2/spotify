@@ -6,8 +6,9 @@
     "home": "Головна",
     "settings": "Налаштування",
     "language": "Мова",
-    "darkMode": "Темний режим",
-    "lightMode": "Світлий режим"
+    "darkMode": "Темна тема",
+    "lightMode": "Світла тема",
+    "popularArtists": "Популярні виконавці"
   },
   "auth": {
     "login": "Увійти",
@@ -20,11 +21,35 @@
     "next": "Наступний",
     "previous": "Попередній",
     "shuffle": "Перемішати",
-    "repeat": "Повторити"
+    "repeat": "Повторити",
+    "volume": "Гучність"
   },
   "playlist": {
     "create": "Створити плейлист",
     "addToPlaylist": "Додати до плейлиста",
     "removeFromPlaylist": "Видалити з плейлиста"
+  },
+  "sidebar": {
+    "library": "Бібліотека",
+    "addPlaylist": "Додати плейлист",
+    "createPlaylist": {
+      "title": "Створіть свій перший плейлист",
+      "description": "Це просто, ми допоможемо вам",
+      "button": "Створити плейлист"
+    },
+    "podcasts": {
+      "title": "Знайдемо подкасти для підписки",
+      "description": "Ми повідомлятимемо вас про нові епізоди",
+      "button": "Переглянути подкасти"
+    }
+  },
+  "footer": {
+    "legal": "Правова інформація",
+    "privacyCenter": "Центр конфіденційності",
+    "privacy": "Політика конфіденційності",
+    "cookiesSettings": "Налаштування файлів cookie",
+    "about": "Про рекламу",
+    "accessibility": "Доступність",
+    "cookies": "Файли cookie"
   }
 }

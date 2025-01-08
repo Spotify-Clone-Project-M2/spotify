@@ -7,11 +7,12 @@
     "settings": "設定",
     "language": "言語",
     "darkMode": "ダークモード",
-    "lightMode": "ライトモード"
+    "lightMode": "ライトモード",
+    "popularArtists": "人気のアーティスト"
   },
   "auth": {
     "login": "ログイン",
-    "signup": "新規登録",
+    "signup": "登録",
     "logout": "ログアウト"
   },
   "player": {
@@ -20,11 +21,35 @@
     "next": "次へ",
     "previous": "前へ",
     "shuffle": "シャッフル",
-    "repeat": "リピート"
+    "repeat": "リピート",
+    "volume": "音量"
   },
   "playlist": {
     "create": "プレイリストを作成",
     "addToPlaylist": "プレイリストに追加",
     "removeFromPlaylist": "プレイリストから削除"
+  },
+  "sidebar": {
+    "library": "ライブラリ",
+    "addPlaylist": "プレイリストを追加",
+    "createPlaylist": {
+      "title": "最初のプレイリストを作成",
+      "description": "簡単です、お手伝いします",
+      "button": "プレイリストを作成"
+    },
+    "podcasts": {
+      "title": "フォローするポッドキャストを見つけましょう",
+      "description": "新しいエピソードについてお知らせします",
+      "button": "ポッドキャストを探す"
+    }
+  },
+  "footer": {
+    "legal": "法的情報",
+    "privacyCenter": "プライバシーセンター",
+    "privacy": "プライバシーポリシー",
+    "cookiesSettings": "Cookie設定",
+    "about": "広告について",
+    "accessibility": "アクセシビリティ",
+    "cookies": "Cookie"
   }
 }

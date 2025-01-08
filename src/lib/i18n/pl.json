@@ -1,13 +1,14 @@
 {
   "common": {
-    "welcome": "Witaj",
+    "welcome": "Witamy",
     "search": "Szukaj",
     "library": "Biblioteka",
     "home": "Strona główna",
     "settings": "Ustawienia",
     "language": "Język",
     "darkMode": "Tryb ciemny",
-    "lightMode": "Tryb jasny"
+    "lightMode": "Tryb jasny",
+    "popularArtists": "Popularni artyści"
   },
   "auth": {
     "login": "Zaloguj się",
@@ -20,11 +21,35 @@
     "next": "Następny",
     "previous": "Poprzedni",
     "shuffle": "Losowo",
-    "repeat": "Powtórz"
+    "repeat": "Powtórz",
+    "volume": "Głośność"
   },
   "playlist": {
     "create": "Utwórz playlistę",
     "addToPlaylist": "Dodaj do playlisty",
     "removeFromPlaylist": "Usuń z playlisty"
+  },
+  "sidebar": {
+    "library": "Biblioteka",
+    "addPlaylist": "Dodaj playlistę",
+    "createPlaylist": {
+      "title": "Utwórz swoją pierwszą playlistę",
+      "description": "To proste, pomożemy Ci",
+      "button": "Utwórz playlistę"
+    },
+    "podcasts": {
+      "title": "Znajdźmy podcasty do obserwowania",
+      "description": "Będziemy informować Cię o nowych odcinkach",
+      "button": "Przeglądaj podcasty"
+    }
+  },
+  "footer": {
+    "legal": "Informacje prawne",
+    "privacyCenter": "Centrum prywatności",
+    "privacy": "Polityka prywatności",
+    "cookiesSettings": "Ustawienia plików cookie",
+    "about": "O reklamach",
+    "accessibility": "Dostępność",
+    "cookies": "Pliki cookie"
   }
 }

@@ -12,6 +12,7 @@
     "prettier:fix": "prettier --write .",
     "lint:fix": "eslint . --fix",
     "lint": "eslint .",
+    "depcheck": "npx depcheck",
     "type:check": "tsc --noEmit",
     "type:watch": "tsc --noEmit --watch",
     "docker:build": "docker build -t spotify-clone .",

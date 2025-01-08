@@ -1,0 +1,23 @@
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-background);
+}
+
+.content {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+  height: calc(100vh - 6.4rem);
+}
+
+.main {
+  flex: 1;
+  overflow-y: auto;
+  background: linear-gradient(180deg, #121212 0%, #000000 100%);
+}
+
+.mainContent {
+  padding: 2.4rem;
+}

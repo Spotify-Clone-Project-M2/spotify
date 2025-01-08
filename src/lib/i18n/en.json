@@ -6,13 +6,14 @@
     "home": "Home",
     "settings": "Settings",
     "language": "Language",
-    "darkMode": "Dark mode",
-    "lightMode": "Light mode"
+    "darkMode": "Dark Mode",
+    "lightMode": "Light Mode",
+    "popularArtists": "Popular Artists"
   },
   "auth": {
-    "login": "Login",
+    "login": "Log in",
     "signup": "Sign up",
-    "logout": "Logout"
+    "logout": "Log out"
   },
   "player": {
     "play": "Play",
@@ -20,11 +21,35 @@
     "next": "Next",
     "previous": "Previous",
     "shuffle": "Shuffle",
-    "repeat": "Repeat"
+    "repeat": "Repeat",
+    "volume": "Volume"
   },
   "playlist": {
-    "create": "Create playlist",
-    "addToPlaylist": "Add to playlist",
-    "removeFromPlaylist": "Remove from playlist"
+    "create": "Create Playlist",
+    "addToPlaylist": "Add to Playlist",
+    "removeFromPlaylist": "Remove from Playlist"
+  },
+  "sidebar": {
+    "library": "Library",
+    "addPlaylist": "Add Playlist",
+    "createPlaylist": {
+      "title": "Create your first playlist",
+      "description": "It's easy, we'll help you",
+      "button": "Create playlist"
+    },
+    "podcasts": {
+      "title": "Let's find some podcasts to follow",
+      "description": "We'll keep you updated on new episodes",
+      "button": "Browse podcasts"
+    }
+  },
+  "footer": {
+    "legal": "Legal",
+    "privacyCenter": "Privacy Center",
+    "privacy": "Privacy Policy",
+    "cookiesSettings": "Cookie Settings",
+    "about": "About Ads",
+    "accessibility": "Accessibility",
+    "cookies": "Cookies"
   }
 }

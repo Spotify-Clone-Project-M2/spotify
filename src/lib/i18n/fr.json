@@ -7,7 +7,8 @@
     "settings": "Paramètres",
     "language": "Langue",
     "darkMode": "Mode sombre",
-    "lightMode": "Mode clair"
+    "lightMode": "Mode clair",
+    "popularArtists": "Artistes populaires"
   },
   "auth": {
     "login": "Se connecter",
@@ -20,11 +21,35 @@
     "next": "Suivant",
     "previous": "Précédent",
     "shuffle": "Aléatoire",
-    "repeat": "Répéter"
+    "repeat": "Répéter",
+    "volume": "Volume"
   },
   "playlist": {
     "create": "Créer une playlist",
     "addToPlaylist": "Ajouter à la playlist",
     "removeFromPlaylist": "Retirer de la playlist"
+  },
+  "sidebar": {
+    "library": "Bibliothèque",
+    "addPlaylist": "Ajouter une playlist",
+    "createPlaylist": {
+      "title": "Créez votre première playlist",
+      "description": "C'est simple, nous allons vous aider",
+      "button": "Créer une playlist"
+    },
+    "podcasts": {
+      "title": "Cherchons quelques podcasts auxquels vous abonner",
+      "description": "Nous vous transmettrons des informations sur les nouveaux épisodes",
+      "button": "Parcourir les podcasts"
+    }
+  },
+  "footer": {
+    "legal": "Légal",
+    "privacyCenter": "Centre de sécurité et de confidentialité",
+    "privacy": "Protection des données",
+    "cookiesSettings": "Paramètres des cookies",
+    "about": "À propos des pubs",
+    "accessibility": "Accessibilité",
+    "cookies": "Cookies"
   }
 }
