@@ -8,6 +8,7 @@ export default function ThemeToggle() {
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);
+    document.dispatchEvent(new Event('themechange'));
   }, [theme]);
 
   return (

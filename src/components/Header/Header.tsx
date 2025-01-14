@@ -11,14 +11,28 @@ import styles from './Header.module.scss';
 export default function Header() {
   const { t } = useTranslationContext();
   const [scrolled, setScrolled] = useState(false);
+  const [currentTheme, setCurrentTheme] = useState('dark');
 
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 0);
     };
 
+    const handleThemeChange = () => {
+      const theme = document.documentElement.getAttribute('data-theme');
+      setCurrentTheme(theme || 'dark');
+    };
+
     window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    document.addEventListener('themechange', handleThemeChange);
+
+    // Initial theme
+    handleThemeChange();
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      document.removeEventListener('themechange', handleThemeChange);
+    };
   }, []);
 
   return (
@@ -28,7 +42,11 @@ export default function Header() {
       <div className={styles.leftSection}>
         <Link href="/" className={styles.logoLink}>
           <Image
-            src="/logo/Spotify_Primary_Logo_RGB_White.png"
+            src={
+              currentTheme === 'dark'
+                ? '/logo/Spotify_Primary_Logo_RGB_White.png'
+                : '/logo/Spotify_Primary_Logo_RGB_Green.png'
+            }
             alt="Spotify"
             className={styles.logo}
             width={96}

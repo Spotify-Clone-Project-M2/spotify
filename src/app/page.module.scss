@@ -32,11 +32,11 @@
       position: relative;
       padding: 1.6rem;
       border-radius: 8px;
-      background: rgba(255, 255, 255, 0.1);
+      background: var(--color-background-elevated);
       transition: background 0.3s ease;
 
       &:hover {
-        background: rgba(255, 255, 255, 0.2);
+        background: var(--color-opacity-hover);
       }
       .artistImage {
         width: 100%;

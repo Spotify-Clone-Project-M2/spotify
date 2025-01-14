@@ -17,8 +17,8 @@ export const metadata: Metadata = {
   keywords: ['music', 'streaming', 'player', 'spotify', 'clone', 'next.js'],
   authors: [{ name: 'Your Name' }],
   icons: {
-    icon: '/favicon.ico',
-    apple: '/apple-touch-icon.png',
+    icon: '/favicon/favicon.ico',
+    apple: '/favicon/icons/favicon-32x32.png',
   },
   manifest: '/manifest.json',
 };

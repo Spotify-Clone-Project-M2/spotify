@@ -39,7 +39,6 @@ export default function Home() {
       <div className={styles.container}>
         <div className={styles.header}>
           <h1 className={styles.title}>{t('common.welcome')}</h1>
-          <br />
         </div>
 
         <section>

@@ -59,6 +59,10 @@ $letterSpacings: (
   --color-text-warning: #ffa42b;
   --color-text-positive: #1ed760;
   --color-border: #2a2a2a;
+  --color-gradient-start: #121212;
+  --color-gradient-end: #000000;
+  --color-opacity: rgba(255, 255, 255, 0.1);
+  --color-opacity-hover: rgba(255, 255, 255, 0.2);
 }
 
 // Light theme
@@ -76,6 +80,10 @@ $letterSpacings: (
   --color-text-warning: #e78305;
   --color-text-positive: #1db954;
   --color-border: #e0e0e0;
+  --color-gradient-start: #ffffff;
+  --color-gradient-end: #f5f5f5;
+  --color-opacity: rgba(0, 0, 0, 0.1);
+  --color-opacity-hover: rgba(0, 0, 0, 0.2);
 }
 
 // Usage variables (reference CSS custom properties)
@@ -92,3 +100,5 @@ $textNegative: var(--color-text-negative);
 $textWarning: var(--color-text-warning);
 $textPositive: var(--color-text-positive);
 $borderColor: var(--color-border);
+$opacity: var(--color-opacity);
+$opacityHover: var(--color-opacity-hover);
