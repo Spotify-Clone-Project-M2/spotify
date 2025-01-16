@@ -5,12 +5,12 @@ interface RegisterResponse {
   message: string;
 }
 
-export default async function handler(request: Request) {
+export default async function POST(request: Request) {
   try {
     const { email, password } = await request.json();
 
     const response = await fetch(
-      `${process.env.NEXT_PUBLIC_API_URL}/register`, // TODO: change to the correct url
+      `${process.env.NEXT_PUBLIC_API_URL}/auth/register`,
       {
         method: 'POST',
         headers: {

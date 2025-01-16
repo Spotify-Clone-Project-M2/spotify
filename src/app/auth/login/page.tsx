@@ -12,20 +12,19 @@ export default function Login() {
   const { t } = useTranslationContext();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [currentTheme, setCurrentTheme] = useState('dark');
+  const [currentTheme, setCurrentTheme] = useState('');
 
   useEffect(() => {
+    const theme = document.documentElement.getAttribute('data-theme');
+    setCurrentTheme(theme || 'dark');
+
     const handleThemeChange = () => {
-      const theme = document.documentElement.getAttribute('data-theme');
-      setCurrentTheme(theme || 'dark');
+      const newTheme = document.documentElement.getAttribute('data-theme');
+      setCurrentTheme(newTheme || 'dark');
     };
 
-    document.addEventListener('themechange', handleThemeChange);
-    handleThemeChange();
-
-    return () => {
-      document.removeEventListener('themechange', handleThemeChange);
-    };
+    window.addEventListener('themechange', handleThemeChange);
+    return () => window.removeEventListener('themechange', handleThemeChange);
   }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -40,7 +39,9 @@ export default function Login() {
       });
 
       const data = await response.json();
-      if (data.success) {
+
+      if (data && data.token && data.success) {
+        console.log(data.token);
         router.push('/');
       } else {
         console.error(data.message);
@@ -64,6 +65,7 @@ export default function Login() {
           height={90}
           className={styles.logo}
           onClick={() => router.push('/')}
+          priority
         />
         <h1 className={styles.title}>{t('auth.haveAccount')}</h1>
 
@@ -113,7 +115,6 @@ export default function Login() {
               onChange={e => setEmail(e.target.value)}
               placeholder={t('common.email')}
               required
-              suppressHydrationWarning
             />
           </div>
 
@@ -126,7 +127,6 @@ export default function Login() {
               onChange={e => setPassword(e.target.value)}
               placeholder={t('common.password')}
               required
-              suppressHydrationWarning
             />
           </div>
 

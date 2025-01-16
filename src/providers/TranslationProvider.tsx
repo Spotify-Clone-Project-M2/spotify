@@ -1,6 +1,12 @@
 'use client';
 
-import { createContext, useContext, ReactNode, useEffect } from 'react';
+import {
+  createContext,
+  useContext,
+  ReactNode,
+  useEffect,
+  useState,
+} from 'react';
 import useTranslation from '@/hooks/useTranslation';
 
 const TranslationContext = createContext<ReturnType<
@@ -9,6 +15,7 @@ const TranslationContext = createContext<ReturnType<
 
 export function TranslationProvider({ children }: { children: ReactNode }) {
   const translation = useTranslation();
+  const [isInitialized, setIsInitialized] = useState(false);
 
   // Effet pour synchroniser avec localStorage
   useEffect(() => {
@@ -16,7 +23,12 @@ export function TranslationProvider({ children }: { children: ReactNode }) {
     if (savedLocale && savedLocale !== translation.locale) {
       translation.changeLanguage(savedLocale);
     }
+    setIsInitialized(true);
   }, [translation]);
+
+  if (!isInitialized) {
+    return null;
+  }
 
   return (
     <TranslationContext.Provider value={translation}>

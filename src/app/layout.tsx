@@ -18,7 +18,8 @@ export const metadata: Metadata = {
   authors: [{ name: 'Your Name' }],
   icons: {
     icon: '/favicon/favicon.ico',
-    apple: '/favicon/icons/favicon-32x32.png',
+    shortcut: '/favicon/favicon.ico',
+    apple: '/favicon/apple-touch-icon.png',
   },
   manifest: '/manifest.json',
 };
