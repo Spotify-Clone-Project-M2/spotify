@@ -2,13 +2,15 @@
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
+import Image from 'next/image';
+import { useTranslationContext } from '@/providers/TranslationProvider';
 import LanguageSelector from '@/components/LanguageSelector/LanguageSelector';
 import ThemeToggle from '@/components/ThemeToggle/ThemeToggle';
-import { useTranslationContext } from '@/providers/TranslationProvider';
-import Image from 'next/image';
 import styles from './Header.module.scss';
 
 export default function Header() {
+  const router = useRouter();
   const { t } = useTranslationContext();
   const [scrolled, setScrolled] = useState(false);
   const [currentTheme, setCurrentTheme] = useState('dark');
@@ -26,7 +28,6 @@ export default function Header() {
     window.addEventListener('scroll', handleScroll);
     document.addEventListener('themechange', handleThemeChange);
 
-    // Initial theme
     handleThemeChange();
 
     return () => {
@@ -81,10 +82,18 @@ export default function Header() {
       <div className={styles.rightSection}>
         <LanguageSelector />
         <ThemeToggle />
-        <button type="button" className={styles.signupButton}>
+        <button
+          type="button"
+          className={styles.signupButton}
+          onClick={() => router.push('/auth/register')}
+        >
           {t('auth.signup')}
         </button>
-        <button type="button" className={styles.loginButton}>
+        <button
+          type="button"
+          className={styles.loginButton}
+          onClick={() => router.push('/auth/login')}
+        >
           {t('auth.login')}
         </button>
       </div>

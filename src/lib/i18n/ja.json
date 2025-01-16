@@ -8,12 +8,19 @@
     "language": "言語",
     "darkMode": "ダークモード",
     "lightMode": "ライトモード",
-    "popularArtists": "人気のアーティスト"
+    "popularArtists": "人気のアーティスト",
+    "email": "メールアドレス",
+    "password": "パスワード",
+    "or": "または"
   },
   "auth": {
     "login": "ログイン",
     "signup": "登録",
-    "logout": "ログアウト"
+    "logout": "ログアウト",
+    "signupWithGoogle": "Googleで登録",
+    "signupWithFacebook": "Facebookで登録",
+    "signupWithApple": "Appleで登録",
+    "alreadyHaveAccount": "すでにアカウントをお持ちですか？"
   },
   "player": {
     "play": "再生",

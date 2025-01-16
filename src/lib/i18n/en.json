@@ -8,12 +8,25 @@
     "language": "Language",
     "darkMode": "Dark Mode",
     "lightMode": "Light Mode",
-    "popularArtists": "Popular Artists"
+    "popularArtists": "Popular Artists",
+    "email": "Email address",
+    "password": "Password",
+    "or": "or"
   },
   "auth": {
     "login": "Log in",
     "signup": "Sign up",
-    "logout": "Log out"
+    "logout": "Log out",
+    "signupWithGoogle": "Sign up with Google",
+    "signupWithFacebook": "Sign up with Facebook",
+    "signupWithApple": "Sign up with Apple",
+    "alreadyHaveAccount": "Already have an account?",
+    "haveAccount": "I have a Spotify account",
+    "loginWithGoogle": "Continue with Google",
+    "loginWithFacebook": "Continue with Facebook",
+    "loginWithApple": "Continue with Apple",
+    "noAccount": "Don't have an account?",
+    "forgotPassword": "Forgot your password?"
   },
   "player": {
     "play": "Play",

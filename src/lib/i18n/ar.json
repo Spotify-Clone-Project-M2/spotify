@@ -8,12 +8,19 @@
     "language": "اللغة",
     "darkMode": "الوضع الداكن",
     "lightMode": "الوضع الفاتح",
-    "popularArtists": "الفنانون المشهورون"
+    "popularArtists": "الفنانون المشهورون",
+    "email": "البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "or": "أو"
   },
   "auth": {
     "login": "تسجيل الدخول",
     "signup": "إنشاء حساب",
-    "logout": "تسجيل الخروج"
+    "logout": "تسجيل الخروج",
+    "signupWithGoogle": "التسجيل باستخدام Google",
+    "signupWithFacebook": "التسجيل باستخدام Facebook",
+    "signupWithApple": "التسجيل باستخدام Apple",
+    "alreadyHaveAccount": "هل لديك حساب بالفعل؟"
   },
   "player": {
     "play": "تشغيل",

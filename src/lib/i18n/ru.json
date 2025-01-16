@@ -8,12 +8,19 @@
     "language": "Язык",
     "darkMode": "Тёмная тема",
     "lightMode": "Светлая тема",
-    "popularArtists": "Популярные исполнители"
+    "popularArtists": "Популярные исполнители",
+    "email": "Электронная почта",
+    "password": "Пароль",
+    "or": "или"
   },
   "auth": {
     "login": "Войти",
     "signup": "Регистрация",
-    "logout": "Выйти"
+    "logout": "Выйти",
+    "signupWithGoogle": "Зарегистрироваться через Google",
+    "signupWithFacebook": "Зарегистрироваться через Facebook",
+    "signupWithApple": "Зарегистрироваться через Apple",
+    "alreadyHaveAccount": "Уже есть аккаунт?"
   },
   "player": {
     "play": "Воспроизвести",

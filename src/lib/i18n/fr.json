@@ -8,12 +8,25 @@
     "language": "Langue",
     "darkMode": "Mode sombre",
     "lightMode": "Mode clair",
-    "popularArtists": "Artistes populaires"
+    "popularArtists": "Artistes populaires",
+    "email": "Adresse e-mail",
+    "password": "Mot de passe",
+    "or": "ou"
   },
   "auth": {
     "login": "Se connecter",
     "signup": "S'inscrire",
-    "logout": "Déconnexion"
+    "logout": "Déconnexion",
+    "signupWithGoogle": "S'inscrire avec Google",
+    "signupWithFacebook": "S'inscrire avec Facebook",
+    "signupWithApple": "S'inscrire avec Apple",
+    "alreadyHaveAccount": "Vous avez déjà un compte ?",
+    "haveAccount": "J'ai un compte Spotify",
+    "loginWithGoogle": "Continuer avec Google",
+    "loginWithFacebook": "Continuer avec Facebook",
+    "loginWithApple": "Continuer avec Apple",
+    "noAccount": "Vous n'avez pas de compte ?",
+    "forgotPassword": "Mot de passe oublié ?"
   },
   "player": {
     "play": "Lecture",

@@ -8,12 +8,19 @@
     "language": "Język",
     "darkMode": "Tryb ciemny",
     "lightMode": "Tryb jasny",
-    "popularArtists": "Popularni artyści"
+    "popularArtists": "Popularni artyści",
+    "email": "Adres e-mail",
+    "password": "Hasło",
+    "or": "lub"
   },
   "auth": {
     "login": "Zaloguj się",
     "signup": "Zarejestruj się",
-    "logout": "Wyloguj się"
+    "logout": "Wyloguj się",
+    "signupWithGoogle": "Zarejestruj się przez Google",
+    "signupWithFacebook": "Zarejestruj się przez Facebook",
+    "signupWithApple": "Zarejestruj się przez Apple",
+    "alreadyHaveAccount": "Masz już konto?"
   },
   "player": {
     "play": "Odtwórz",
