@@ -6,28 +6,34 @@ import styles from './ThemeToggle.module.scss';
 
 export default function ThemeToggle() {
   const { t } = useTranslationContext();
-  const [theme, setTheme] = useState(() => {
-    if (typeof window !== 'undefined') {
-      return localStorage.getItem('theme') || 'dark';
-    }
-    return 'dark';
-  });
+  const [mounted, setMounted] = useState(false);
+  const [theme, setTheme] = useState('dark');
 
   useLayoutEffect(() => {
-    document.documentElement.setAttribute('data-theme', theme);
-  }, [theme]);
+    const savedTheme = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia(
+      '(prefers-color-scheme: dark)'
+    ).matches;
+    const initialTheme = savedTheme || (prefersDark ? 'dark' : 'light');
+
+    setTheme(initialTheme);
+    document.documentElement.setAttribute('data-theme', initialTheme);
+    setMounted(true);
+  }, []);
 
   const toggleTheme = useCallback(() => {
     setTheme(prevTheme => {
       const newTheme = prevTheme === 'dark' ? 'light' : 'dark';
       localStorage.setItem('theme', newTheme);
-
-      const event = new Event('themechange');
-      document.dispatchEvent(event);
-
+      document.documentElement.setAttribute('data-theme', newTheme);
+      window.dispatchEvent(new Event('themechange'));
       return newTheme;
     });
   }, []);
+
+  if (!mounted) {
+    return null;
+  }
 
   return (
     <button

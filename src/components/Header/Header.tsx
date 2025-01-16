@@ -22,19 +22,21 @@ export default function Header() {
 
     const handleThemeChange = () => {
       const theme = document.documentElement.getAttribute('data-theme');
-      setCurrentTheme(theme || 'dark');
+      if (theme !== currentTheme) {
+        setCurrentTheme(theme || 'dark');
+      }
     };
-
-    window.addEventListener('scroll', handleScroll);
-    document.addEventListener('themechange', handleThemeChange);
 
     handleThemeChange();
 
+    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('themechange', handleThemeChange);
+
     return () => {
       window.removeEventListener('scroll', handleScroll);
-      document.removeEventListener('themechange', handleThemeChange);
+      window.removeEventListener('themechange', handleThemeChange);
     };
-  }, []);
+  }, [currentTheme]);
 
   return (
     <header

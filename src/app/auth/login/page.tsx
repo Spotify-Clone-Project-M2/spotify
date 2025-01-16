@@ -111,7 +111,7 @@ export default function Login() {
               id="email"
               value={email}
               onChange={e => setEmail(e.target.value)}
-              placeholder="nom@domaine.com"
+              placeholder={t('common.email')}
               required
               suppressHydrationWarning
             />
@@ -124,7 +124,7 @@ export default function Login() {
               id="password"
               value={password}
               onChange={e => setPassword(e.target.value)}
-              placeholder="Mot de passe"
+              placeholder={t('common.password')}
               required
               suppressHydrationWarning
             />

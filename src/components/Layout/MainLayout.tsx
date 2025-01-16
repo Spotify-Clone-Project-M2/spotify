@@ -18,6 +18,7 @@ export default function MainLayout({
           <div className={styles.mainContent}>{children}</div>
         </main>
       </div>
+      {/* TODO: Add player */}
       {/* <Player /> */}
     </div>
   );

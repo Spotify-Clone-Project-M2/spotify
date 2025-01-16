@@ -76,7 +76,7 @@ export default function Register() {
               id="email"
               value={email}
               onChange={e => setEmail(e.target.value)}
-              placeholder="nom@domaine.com"
+              placeholder={t('common.email')}
               required
               suppressHydrationWarning
             />
@@ -89,7 +89,7 @@ export default function Register() {
               id="password"
               value={password}
               onChange={e => setPassword(e.target.value)}
-              placeholder="••••••••"
+              placeholder={t('common.password')}
               required
               suppressHydrationWarning
             />

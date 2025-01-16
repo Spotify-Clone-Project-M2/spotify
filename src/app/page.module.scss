@@ -1,12 +1,15 @@
 .container {
-  display: flex;
-  flex-direction: column;
-  gap: 2.4rem;
+  width: 100%;
+  padding: 2.4rem;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
 
   .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 3.2rem;
 
     .title {
       font-size: 2.4rem;
@@ -15,47 +18,105 @@
     }
   }
 
-  .sectionTitle {
-    font-size: 2rem;
-    font-weight: 700;
-    color: var(--color-text-base);
-    margin-bottom: 1.6rem;
-  }
-
-  .artistsGrid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-    gap: 2.4rem;
+  .section {
     margin-bottom: 4rem;
 
-    .artistCard {
-      position: relative;
-      padding: 1.6rem;
-      border-radius: 8px;
-      background: var(--color-background-elevated);
-      transition: background 0.3s ease;
+    &:last-child {
+      margin-bottom: 0;
+    }
 
-      &:hover {
-        background: var(--color-opacity-hover);
-      }
-      .artistImage {
-        width: 100%;
-        aspect-ratio: 1;
-        border-radius: 50%;
+    .sectionHeader {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2rem;
+
+      @media (max-width: 768px) {
         margin-bottom: 1.6rem;
-        object-fit: cover;
-      }
-
-      .artistName {
-        font-size: 1.6rem;
-        font-weight: 600;
-        color: var(--color-text-base);
-      }
-
-      .artistType {
-        font-size: 1.4rem;
-        color: var(--color-text-subdued);
       }
     }
+
+    .sectionTitle {
+      font-size: 2.4rem;
+      font-weight: 700;
+      color: var(--color-text-base);
+
+      @media (max-width: 768px) {
+        font-size: 2rem;
+      }
+    }
+
+    .showAllButton {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--color-text-subdued);
+      text-transform: capitalize;
+      cursor: pointer;
+      transition: color 0.2s ease;
+
+      &:hover {
+        color: var(--color-text-base);
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .artistName {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--color-text-base);
+  }
+
+  .artistType {
+    font-size: 1.4rem;
+    color: var(--color-text-subdued);
+  }
+}
+
+.trackItem {
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  outline: none;
+
+  &:hover,
+  &:focus-visible {
+    background-color: var(--color-opacity-hover);
+    color: var(--color-primary);
+  }
+
+  &:active {
+    transform: scale(0.98);
+  }
+}
+
+.artistItem {
+  cursor: pointer;
+  transition: all 0.2s ease;
+  outline: none;
+
+  &:hover,
+  &:focus-visible {
+    background-color: var(--color-opacity-hover);
+    color: var(--color-primary);
+  }
+
+  &:active {
+    transform: scale(0.98);
+  }
+}
+
+.albumItem {
+  cursor: pointer;
+  transition: all 0.2s ease;
+  outline: none;
+
+  &:hover,
+  &:focus-visible {
+    background-color: var(--color-opacity-hover);
+    color: var(--color-primary);
+  }
+
+  &:active {
+    transform: scale(0.98);
   }
 }
