@@ -11,7 +11,8 @@
     "popularArtists": "الفنانون المشهورون",
     "email": "البريد الإلكتروني",
     "password": "كلمة المرور",
-    "or": "أو"
+    "or": "أو",
+    "showAll": "عرض الكل"
   },
   "auth": {
     "login": "تسجيل الدخول",
@@ -20,7 +21,13 @@
     "signupWithGoogle": "التسجيل باستخدام Google",
     "signupWithFacebook": "التسجيل باستخدام Facebook",
     "signupWithApple": "التسجيل باستخدام Apple",
-    "alreadyHaveAccount": "هل لديك حساب بالفعل؟"
+    "alreadyHaveAccount": "هل لديك حساب بالفعل؟",
+    "haveAccount": "لدي حساب على Spotify",
+    "loginWithGoogle": "المتابعة باستخدام Google",
+    "loginWithFacebook": "المتابعة باستخدام Facebook",
+    "loginWithApple": "المتابعة باستخدام Apple",
+    "noAccount": "ليس لديك حساب؟",
+    "forgotPassword": "نسيت كلمة المرور؟"
   },
   "player": {
     "play": "تشغيل",
@@ -58,5 +65,22 @@
     "about": "حول الإعلانات",
     "accessibility": "إمكانية الوصول",
     "cookies": "ملفات تعريف الارتباط"
+  },
+  "home": {
+    "topTracks": "أفضل المسارات",
+    "popularArtists": "الفنانون المشهورون",
+    "recentAlbums": "الألبومات الحديثة"
+  },
+  "album": {
+    "title": "ألبوم",
+    "tracks": "المسارات",
+    "releaseDate": "تاريخ الإصدار",
+    "duration": "المدة",
+    "track": {
+      "title": "العنوان",
+      "duration": "المدة",
+      "artist": "الفنان",
+      "album": "الألبوم"
+    }
   }
 }

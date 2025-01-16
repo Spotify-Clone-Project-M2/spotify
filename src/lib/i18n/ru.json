@@ -11,7 +11,8 @@
     "popularArtists": "Популярные исполнители",
     "email": "Электронная почта",
     "password": "Пароль",
-    "or": "или"
+    "or": "или",
+    "showAll": "Показать все"
   },
   "auth": {
     "login": "Войти",
@@ -20,7 +21,13 @@
     "signupWithGoogle": "Зарегистрироваться через Google",
     "signupWithFacebook": "Зарегистрироваться через Facebook",
     "signupWithApple": "Зарегистрироваться через Apple",
-    "alreadyHaveAccount": "Уже есть аккаунт?"
+    "alreadyHaveAccount": "Уже есть аккаунт?",
+    "haveAccount": "У меня есть аккаунт Spotify",
+    "loginWithGoogle": "Продолжить с Google",
+    "loginWithFacebook": "Продолжить с Facebook",
+    "loginWithApple": "Продолжить с Apple",
+    "noAccount": "Нет аккаунта?",
+    "forgotPassword": "Забыли пароль?"
   },
   "player": {
     "play": "Воспроизвести",
@@ -58,5 +65,22 @@
     "about": "О рекламе",
     "accessibility": "Доступность",
     "cookies": "Файлы cookie"
+  },
+  "home": {
+    "topTracks": "Лучшие треки",
+    "popularArtists": "Популярные исполнители",
+    "recentAlbums": "Новые альбомы"
+  },
+  "album": {
+    "title": "Альбом",
+    "tracks": "Треки",
+    "releaseDate": "Дата выхода",
+    "duration": "Длительность",
+    "track": {
+      "title": "Название",
+      "duration": "Длительность",
+      "artist": "Исполнитель",
+      "album": "Альбом"
+    }
   }
 }

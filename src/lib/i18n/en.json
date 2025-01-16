@@ -11,7 +11,8 @@
     "popularArtists": "Popular Artists",
     "email": "Email address",
     "password": "Password",
-    "or": "or"
+    "or": "or",
+    "showAll": "Show all"
   },
   "auth": {
     "login": "Log in",
@@ -64,5 +65,22 @@
     "about": "About Ads",
     "accessibility": "Accessibility",
     "cookies": "Cookies"
+  },
+  "home": {
+    "topTracks": "Top tracks",
+    "popularArtists": "Popular artists",
+    "recentAlbums": "Recent albums"
+  },
+  "album": {
+    "title": "Album",
+    "tracks": "Tracks",
+    "releaseDate": "Release date",
+    "duration": "Duration",
+    "track": {
+      "title": "Title",
+      "duration": "Duration",
+      "artist": "Artist",
+      "album": "Album"
+    }
   }
 }

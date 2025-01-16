@@ -11,7 +11,8 @@
     "popularArtists": "Популярні виконавці",
     "email": "Електронна пошта",
     "password": "Пароль",
-    "or": "або"
+    "or": "або",
+    "showAll": "Показати все"
   },
   "auth": {
     "login": "Увійти",
@@ -20,7 +21,13 @@
     "signupWithGoogle": "Зареєструватися через Google",
     "signupWithFacebook": "Зареєструватися через Facebook",
     "signupWithApple": "Зареєструватися через Apple",
-    "alreadyHaveAccount": "Вже маєте обліковий запис?"
+    "alreadyHaveAccount": "Вже маєте обліковий запис?",
+    "haveAccount": "У мене є обліковий запис Spotify",
+    "loginWithGoogle": "Продовжити через Google",
+    "loginWithFacebook": "Продовжити через Facebook",
+    "loginWithApple": "Продовжити через Apple",
+    "noAccount": "Немає облікового запису?",
+    "forgotPassword": "Забули пароль?"
   },
   "player": {
     "play": "Відтворити",
@@ -58,5 +65,22 @@
     "about": "Про рекламу",
     "accessibility": "Доступність",
     "cookies": "Файли cookie"
+  },
+  "home": {
+    "topTracks": "Найкращі треки",
+    "popularArtists": "Популярні виконавці",
+    "recentAlbums": "Нові альбоми"
+  },
+  "album": {
+    "title": "Альбом",
+    "tracks": "Треки",
+    "releaseDate": "Дата випуску",
+    "duration": "Тривалість",
+    "track": {
+      "title": "Назва",
+      "duration": "Тривалість",
+      "artist": "Виконавець",
+      "album": "Альбом"
+    }
   }
 }

@@ -11,7 +11,8 @@
     "popularArtists": "人気のアーティスト",
     "email": "メールアドレス",
     "password": "パスワード",
-    "or": "または"
+    "or": "または",
+    "showAll": "すべて表示"
   },
   "auth": {
     "login": "ログイン",
@@ -20,7 +21,13 @@
     "signupWithGoogle": "Googleで登録",
     "signupWithFacebook": "Facebookで登録",
     "signupWithApple": "Appleで登録",
-    "alreadyHaveAccount": "すでにアカウントをお持ちですか？"
+    "alreadyHaveAccount": "すでにアカウントをお持ちですか？",
+    "haveAccount": "Spotifyアカウントを持っています",
+    "loginWithGoogle": "Googleで続ける",
+    "loginWithFacebook": "Facebookで続ける",
+    "loginWithApple": "Appleで続ける",
+    "noAccount": "アカウントをお持ちでないですか？",
+    "forgotPassword": "パスワードをお忘れですか？"
   },
   "player": {
     "play": "再生",
@@ -58,5 +65,22 @@
     "about": "広告について",
     "accessibility": "アクセシビリティ",
     "cookies": "Cookie"
+  },
+  "home": {
+    "topTracks": "トップトラック",
+    "popularArtists": "人気のアーティスト",
+    "recentAlbums": "最新アルバム"
+  },
+  "album": {
+    "title": "アルバム",
+    "tracks": "トラック",
+    "releaseDate": "リリース日",
+    "duration": "再生時間",
+    "track": {
+      "title": "タイトル",
+      "duration": "再生時間",
+      "artist": "アーティスト",
+      "album": "アルバム"
+    }
   }
 }

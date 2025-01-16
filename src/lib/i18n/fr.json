@@ -11,7 +11,8 @@
     "popularArtists": "Artistes populaires",
     "email": "Adresse e-mail",
     "password": "Mot de passe",
-    "or": "ou"
+    "or": "ou",
+    "showAll": "Tout afficher"
   },
   "auth": {
     "login": "Se connecter",
@@ -64,5 +65,22 @@
     "about": "À propos des pubs",
     "accessibility": "Accessibilité",
     "cookies": "Cookies"
+  },
+  "home": {
+    "topTracks": "Top titres",
+    "popularArtists": "Artistes populaires",
+    "recentAlbums": "Albums récents"
+  },
+  "album": {
+    "title": "Album",
+    "tracks": "Titres",
+    "releaseDate": "Date de sortie",
+    "duration": "Durée",
+    "track": {
+      "title": "Titre",
+      "duration": "Durée",
+      "artist": "Artiste",
+      "album": "Album"
+    }
   }
 }

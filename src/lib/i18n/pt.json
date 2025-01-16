@@ -11,7 +11,8 @@
     "popularArtists": "Artistas populares",
     "email": "Endereço de e-mail",
     "password": "Senha",
-    "or": "ou"
+    "or": "ou",
+    "showAll": "Mostrar tudo"
   },
   "auth": {
     "login": "Entrar",
@@ -20,7 +21,13 @@
     "signupWithGoogle": "Inscrever-se com o Google",
     "signupWithFacebook": "Inscrever-se com o Facebook",
     "signupWithApple": "Inscrever-se com a Apple",
-    "alreadyHaveAccount": "Já tem uma conta?"
+    "alreadyHaveAccount": "Já tem uma conta?",
+    "haveAccount": "Tenho uma conta Spotify",
+    "loginWithGoogle": "Continuar com Google",
+    "loginWithFacebook": "Continuar com Facebook",
+    "loginWithApple": "Continuar com Apple",
+    "noAccount": "Não tem uma conta?",
+    "forgotPassword": "Esqueceu sua senha?"
   },
   "player": {
     "play": "Reproduzir",
@@ -58,5 +65,22 @@
     "about": "Sobre anúncios",
     "accessibility": "Acessibilidade",
     "cookies": "Cookies"
+  },
+  "home": {
+    "topTracks": "Top faixas",
+    "popularArtists": "Artistas populares",
+    "recentAlbums": "Álbuns recentes"
+  },
+  "album": {
+    "title": "Álbum",
+    "tracks": "Faixas",
+    "releaseDate": "Data de lançamento",
+    "duration": "Duração",
+    "track": {
+      "title": "Título",
+      "duration": "Duração",
+      "artist": "Artista",
+      "album": "Álbum"
+    }
   }
 }
